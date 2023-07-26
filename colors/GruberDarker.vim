@@ -197,6 +197,22 @@ call <sid>hi('vimfilerNormalFile',  s:gruberFG,      s:gruberBG1, '',  '')
 call <sid>hi('vimfilerOpenedFile',  s:gruberNiagara, '',          '',  '')
 call <sid>hi('vimfilerClosedFile',  s:gruberNiagara, '',          '',  '')
 
+
+" GitGutter highlighting
+call <sid>hi('GruberGreenSign', s:gruberGreen, s:gruberBG, '', '')
+call <sid>hi('GruberPurpleSign', s:gruberPurple, s:gruberBG, '', '')
+call <sid>hi('GruberRedSign', s:gruberLightRed, s:gruberBG, '', '')
+hi! link GitGutterAdd GruberGreenSign
+hi! link GitGutterChange GruberPurpleSign
+hi! link GitGutterDelete GruberRedSign
+hi! link GitGutterChangeDelete GruberPurpleSign
+
+" Diff highlighting (like in :GBlame)
+
+call <sid>hi('diffRemoved', s:gruberLightRed, s:gruberBG, '', '')
+call <sid>hi('diffAdded', s:gruberGreen, s:gruberBG, '', '')
+call <sid>hi('diffChanged', s:gruberPurple, s:gruberBG, '', '')
+
 " }}}
 
 let g:terminal_color_0=s:gruberBG1[0]
