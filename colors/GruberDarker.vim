@@ -35,7 +35,7 @@
   let s:gruberFG3=['#65737e', '243']
   let s:gruberWhite=['#ffffff', '15']
   let s:gruberBlack=['#000000', '0']
-  let s:gruberBG=['#181818', '233']
+  let s:gruberBG=['#1a1b1b', '233']
   let s:gruberBG1=['#282828', '235']
   let s:gruberBG2=['#453d41', '238']
   let s:gruberLightRed=['#c73c3f', '203']
@@ -76,7 +76,7 @@ call <sid>hi('Bold',          '',                 '',           'bold',    '')
 call <sid>hi('Debug',         s:gruberFG2,        '',           '',        '')
 call <sid>hi('Directory',     s:gruberLightBlue,  '',           '',        '')
 call <sid>hi('ErrorMsg',      s:gruberWhite,      s:gruberRed,  '',        '')
-call <sid>hi('Exception',     s:gruberBrown,      '',           '',        '')
+call <sid>hi('Exception',     s:gruberMain,      '',            'bold',    '')
 call <sid>hi('FoldColumn',    s:gruberBrown,      s:gruberFG2,  '',        '')
 call <sid>hi('Folded',        s:gruberBrown,      s:gruberFG2,  s:italic,  '')
 call <sid>hi('IncSearch',     s:gruberBlack,      s:gruberFG2,  'NONE',    '')
@@ -106,7 +106,7 @@ call <sid>hi('SignColumn',    s:none,             s:none,        '',        '')
 call <sid>hi('VertSplit',     s:gruberFG2,        s:gruberBG1,   '',        '')
 call <sid>hi('ColorColumn',   '',                 s:gruberBG2,   '',        '')
 call <sid>hi('CursorColumn',  '',                 s:gruberBG2,   '',        '')
-call <sid>hi('CursorLine',    '',                 s:gruberBG2,   'NONE',    '')
+call <sid>hi('CursorLine',    '',                 ["#303030", 240],   'NONE',    '')
 call <sid>hi('CursorLineNr',  s:gruberMain,       s:gruberBG,    '',        '')
 call <sid>hi('PMenu',         s:gruberFG,         s:gruberBG1,   '',        '')
 call <sid>hi('PMenuSel',      s:gruberFG,         s:gruberBG2,   '',        '')
@@ -139,7 +139,7 @@ call <sid>hi('Statement',     s:gruberMain,       '',            '',          ''
 call <sid>hi('StorageClass',  s:gruberMain,       '',            '',          '')
 call <sid>hi('String',        s:gruberGreen,      '',            '',          '')
 call <sid>hi('Structure',     s:gruberMain,       '',            '',          '')
-call <sid>hi('Todo',          s:gruberBG,         s:gruberMain,  '',          '')
+call <sid>hi('Todo',          s:gruberBrown,      ['bg', 'bg'],  'bold',      '')
 call <sid>hi('Type',          s:gruberQuartz,     '',            '',          '')
 call <sid>hi('Typedef',       s:gruberQuartz,     '',            '',          '')
 
